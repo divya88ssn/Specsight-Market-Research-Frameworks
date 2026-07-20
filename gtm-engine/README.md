@@ -15,7 +15,7 @@ vocabulary rather than abstract product-management theory.
 | --- | --- | --- | --- |
 | **1** | **Industrial Knowledge Graph** | ✅ Delivered | [`layer-1-industrial-knowledge-graph.md`](layer-1-industrial-knowledge-graph.md) (+ [`layer-1/`](layer-1/)) |
 | **2** | **Failure Mode Library** | ✅ Delivered | [`layer-2-failure-mode-library.md`](layer-2-failure-mode-library.md) (+ [`layer-2/`](layer-2/)) |
-| 3 | Capability Graph | Planned (DIV-34) | — |
+| **3** | **Capability Graph** | ✅ Delivered | [`layer-3-capability-graph.md`](layer-3-capability-graph.md) (+ [`layer-3/`](layer-3/)) |
 | 4 | Buying Trigger Graph | Planned (DIV-35) | — |
 | 5 | GTM Assets | Planned (sibling brief) | — |
 | 6 | Commercial Learning Loop | Planned | — |
@@ -53,6 +53,22 @@ Its six sections: [schema](layer-2/00-schema-and-organization.md) ·
 [two loops](layer-2/03-discovery-refinement-verification-failure-modes.md) ·
 [cross-stage drift & Context Reconstruction Tax](layer-2/04-cross-stage-drift-and-context-reconstruction-tax.md) ·
 [Framework-5 & underserved gaps](layer-2/05-framework-5-separation-and-underserved-gaps.md).
+
+## Layer 3 — Capability Graph (delivered)
+
+Layer 3 connects each failure mode to the capability gap it represents and to the Specsight
+capability that fills it — *failure mode → missing capability → current workaround → existing
+alternatives → Specsight capability → customer value* — then assesses the current-vs-missing
+gap as a roadmap input. Start at the hub:
+
+- **[Layer 3 hub](layer-3-capability-graph.md)** — the `CAP-NN` capability index (the 25 `FM`
+  ids collapse to seven missing capabilities), the six-link `CapabilityMappingChain` contract,
+  and the cross-reference contract for Layer 4 and the GTM-asset tasks.
+
+Its four sections: [schema & cross-referencing contract](layer-3/00-capability-mapping-chain-schema.md) ·
+[failure-mode-to-capability map (links 1–4)](layer-3/01-failure-mode-to-capability-map.md) ·
+[Specsight capability & customer value (links 5–6)](layer-3/02-specsight-capability-and-customer-value.md) ·
+[capability gap assessment (roadmap input)](layer-3/03-capability-gap-assessment.md).
 
 ### For contributors to later layers
 
