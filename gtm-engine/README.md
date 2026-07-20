@@ -17,12 +17,26 @@ vocabulary rather than abstract product-management theory.
 | **2** | **Failure Mode Library** | ✅ Delivered | [`layer-2-failure-mode-library.md`](layer-2-failure-mode-library.md) (+ [`layer-2/`](layer-2/)) |
 | **3** | **Capability Graph** | ✅ Delivered | [`layer-3-capability-graph.md`](layer-3-capability-graph.md) (+ [`layer-3/`](layer-3/)) |
 | **4** | **Buying Trigger Graph** | ✅ Delivered | [`layer-4-buying-trigger-graph.md`](layer-4-buying-trigger-graph.md) (+ [`layer-4/`](layer-4/)) |
-| 5 | GTM Assets | Planned (sibling brief) | — |
-| 6 | Commercial Learning Loop | Planned | — |
+| 5 | GTM Assets | Planned (sibling brief) | interface defined in the [architecture capstone](gtm-engine-architecture.md) |
+| **6** | **Commercial Learning Loop** | ✅ Defined (in architecture) | [`gtm-engine-architecture.md` §2](architecture/02-commercial-learning-loop.md) |
 
 Every layer starts from **the customer's operating model**, never from Specsight — because
 buying triggers emerge from operating systems, not from demographics, company size, or job
 titles.
+
+## Architecture — the connected six-layer operating model (capstone)
+
+The capstone document ties all six layers into one operable engine. It defines the inter-layer
+interfaces, the Commercial Learning Loop closure (Layer 6), the sibling-GTM consumption map, the
+four-workstream trace, and the repeatable extension methodology.
+
+- **[GTM Engine Architecture (capstone)](gtm-engine-architecture.md)** — the hub, `LayerInterface`
+  contract, and full six-layer pipeline. Owned by DIV-36.
+
+Its four sections: [§1 six-layer interfaces](architecture/01-six-layer-interfaces.md) (DIV-37) ·
+[§2 Commercial Learning Loop](architecture/02-commercial-learning-loop.md) (DIV-41) ·
+[§3 sibling GTM mapping & four workstreams](architecture/03-sibling-gtm-mapping-and-workstreams.md) (DIV-44) ·
+[§4 repeatable research methodology](architecture/04-repeatable-research-methodology.md) (DIV-47).
 
 ## Layer 1 — Industrial Knowledge Graph (delivered)
 
