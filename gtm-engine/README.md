@@ -14,7 +14,7 @@ vocabulary rather than abstract product-management theory.
 | Layer | Name | Status | Canonical output |
 | --- | --- | --- | --- |
 | **1** | **Industrial Knowledge Graph** | ✅ Delivered | [`layer-1-industrial-knowledge-graph.md`](layer-1-industrial-knowledge-graph.md) (+ [`layer-1/`](layer-1/)) |
-| 2 | Failure Mode Library | Planned (DIV-33) | — |
+| **2** | **Failure Mode Library** | ✅ Delivered | [`layer-2-failure-mode-library.md`](layer-2-failure-mode-library.md) (+ [`layer-2/`](layer-2/)) |
 | 3 | Capability Graph | Planned (DIV-34) | — |
 | 4 | Buying Trigger Graph | Planned (DIV-35) | — |
 | 5 | GTM Assets | Planned (sibling brief) | — |
@@ -39,9 +39,26 @@ Its five sections:
 4. [Company-Specific Implementations](layer-1/04-company-implementations-matrix.md) — the evidence base grounding the concepts.
 5. [The Refinement Boundary Gap](layer-1/05-refinement-boundary-gap.md) — the under-documented frontier downstream layers point at.
 
+## Layer 2 — Failure Mode Library (delivered)
+
+Layer 2 catalogues, per workflow stage, the recurring ways PM workflows break down — anchored
+to the Layer 1 concept nodes. Start at the hub:
+
+- **[Layer 2 hub](layer-2-failure-mode-library.md)** — the `FM-NN` failure-mode index, the
+  entry schema, workflow-stage organization, and the cross-reference contract for Layers 3–4.
+
+Its six sections: [schema](layer-2/00-schema-and-organization.md) ·
+[AC / DoD](layer-2/01-acceptance-criteria-dod-failure-modes.md) ·
+[Implementation / Continuous Collaboration](layer-2/02-implementation-continuous-collaboration-failure-modes.md) ·
+[two loops](layer-2/03-discovery-refinement-verification-failure-modes.md) ·
+[cross-stage drift & Context Reconstruction Tax](layer-2/04-cross-stage-drift-and-context-reconstruction-tax.md) ·
+[Framework-5 & underserved gaps](layer-2/05-framework-5-separation-and-underserved-gaps.md).
+
 ### For contributors to later layers
 
 - Cite Layer 1 by **file path** (paths above are stable) and by **concept node ID**
   (`CN-01`…`CN-09`, defined in Section 2).
-- The **refinement boundary gap** (Section 5) is the primary substrate for the Failure Mode
-  Library, Capability Graph, and Buying Trigger Graph.
+- Cite Layer 2 failure modes by **`FM-NN` id** (defined in the Layer 2 hub); Layer 3 attaches a
+  capability mapping to each id, Layer 4 references them as buying-trigger sources.
+- The **refinement boundary gap** (Layer 1 Section 5, catalogued as failure mode `FM-14`) is the
+  primary substrate for the Failure Mode Library, Capability Graph, and Buying Trigger Graph.
